@@ -1,0 +1,310 @@
+
+body{
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 4;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 80px;
+	background-color: black;
+}
+header nav ul{
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+	align-items: center;
+	width: 800px;
+}
+header nav ul a{
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+.logo{
+	font-family: 'Lobster', cursive;
+	color: white;
+	font-size: 1.5em;
+	transform: rotate(-10deg);
+	text-align: center;
+	line-height: 20px;
+	padding-top: 15px;
+	position: relative;
+	bottom: 10px;
+}
+.panier a{
+	font-size: 2em;
+	color: white;
+}
+.panier :nth-child(1){
+	margin-right: 10px;
+}
+
+.container-hero{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 700px;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/accueil.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.baseline{
+	margin-bottom: 50px;
+	width: 910px;
+	color: white;
+}
+.baseline h1{
+	font-size: 3em;
+	margin-bottom: 0;
+}
+.baseline h2{
+	margin-top: 0;
+}
+.search button{
+	border: none;
+	height: 35px;
+	width: 100px;
+	border-radius: 0px 20px 20px 0px;
+	position: relative;
+	right: 4px;
+	cursor: pointer;
+}
+.search input{
+	width: 800px;
+	height: 35px;
+	border-radius: 20px 0px 0px 20px;
+	border: none;
+	padding-left: 10px;
+}
+
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 50px;
+}
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+.card-product{
+	max-width: 200px;
+    margin: 50px;
+}
+.up-card img{
+	width: 200px;
+}
+.down-card .button{
+	display: flex;
+	justify-content: flex-end;
+}
+.down-card .button a{
+    padding: 5px 20px;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    border-radius: 5px;
+}
+.down-card .text h3{
+    border-bottom: 1px solid gray;
+}
+.down-card .text p{
+    color: gray;
+    font-weight: bold;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content img{
+    width: 500px;
+}
+.accroche{
+    max-width: 1000px;
+    margin-top: 50px;
+}
+.accroche h2{
+    text-align: center;
+}
+
+
+.no-hero{
+    margin-top: 50px;
+}
+.detail-container{
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.detail-container .left{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+.principal-pic{
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.principal-pic img{
+    width: 300px;
+}
+.otherpic{
+    display: flex;
+}
+.otherpic img{
+    width: 150px;
+    margin: 10px;
+}
+
+
+.detail-container .right{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+.price{ 
+    text-align: right;
+    margin-top: 50px;
+}
+.paybutton{
+    display: flex;
+    justify-content: flex-end;
+}
+.paybutton a{
+    padding: 5px 20px;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    border-radius: 5px;
+}
+/*------------------PAIEMENT-------------------*/
+.facturation{
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 30px rgba(000,000,000,0.3);
+}
+.paiement-div{
+	max-width: 500px;
+	margin: auto;
+}
+.paiement-div label{
+	margin-bottom: 5px;
+}
+.paiement-div input{
+	padding: 5px;
+}
+.facturation div{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+.paiement-div .facturation .adress{
+	display: flex;
+	flex-direction: initial;
+	justify-content: space-between;
+	width: 100%;
+}
+.paiement-div .facturation .adress div{
+	width: 50%;
+}
+.paiement-div .facturation .adress :nth-child(1){
+	margin-right: 10px;
+}
+.paiement-div .facturation .ccv{
+	display: flex;
+	flex-direction: initial;
+}
+.paiement-div .facturation .ccv a{
+	color: black;
+}
+.paiement-div .facturation .ccv input{
+	margin-right: 10px;
+	max-width: 100px;
+}
+.cryptodiv{
+	align-self: flex-end;
+}
+.validation a{
+	padding: 5px 20px;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    border-radius: 5px;
+    text-align: center;
+}
+.box-choix{
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 30px rgba(000,000,000,0.3);
+}
+.height{
+	height: 550px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/*-----------Confirmation--------------*/
+.validation-box{
+	text-align: center;
+}
+.choix{
+	max-width: 1000px;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+}
+.choix a{
+	padding: 5px 20px;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    border-radius: 5px;
+    margin: 10px;
+}
+/*----------------FOOTER---------------------*/
+footer {
+    background-color: black;
+    padding-top: 50px;
+    margin-top: 50px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
+    color: white;
+}
+.footer div{
+    display: flex;
+    flex-direction: column;
+}
+.footer div a{
+    color: white;
+}
+
+.footer-accroche{
+    max-width: 150px;
+}
+.footer-social{
+    margin-top: 20px;
+    font-size: 2em;
+}
